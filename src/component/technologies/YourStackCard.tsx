@@ -17,17 +17,14 @@ const YourStackCard = ({
 
       <h1>Your Stack</h1>
 
-      {selectedTech.length === 0 ? (
-        <p>No technologies selected yet.</p>
-      ) : (
-        <p>
-          {selectedTech.length} technologies selected
-        </p>
-      )}
 
       <div>
         <p>Your stack is empty</p>
       </div>
+      {selectedTech.map((tech)=>{
+        return tech.name
+
+      })}
 
     </div>
   );

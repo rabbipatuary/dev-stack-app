@@ -17,6 +17,8 @@ const AllTechnologies = ({ teches }: { teches: Itechnologies[] }) => {
               key={tech.id}
               tech={tech}
               setSelectedTech={setSelectedTech}
+              selectedTech = {selectedTech}
+              
             />
           );
         })}

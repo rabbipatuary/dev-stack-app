@@ -2,20 +2,26 @@ import { useState } from "react";
 import type { Itechnologies } from "../../types/technologies";
 
 import { FaStar } from "react-icons/fa";
+import { toast } from "react-toastify";
+
 
 const TechnologyCard = ({
   tech,
+  selectedTech,
   setSelectedTech,
 }: {
   tech: Itechnologies;
+  selectedTech:Itechnologies[];
+
   setSelectedTech: React.Dispatch<React.SetStateAction<Itechnologies[]>>;
 }) => {
   const [isAdd, setIsAdd] = useState(false);
 
   const HandleAddTehcnologies = () => {
     setIsAdd(true);
+    toast.success(`${tech.name} Added.`)
+   setSelectedTech([...selectedTech,tech])
 
-    setSelectedTech((previous) => [...previous, tech]);
   };
 
   return (
