@@ -2,7 +2,8 @@
 import banner from '../assets/hero.png'
 const Banner = () => {
     return (
-        <div className="flex justify-between items-center container mx-auto mt-9">
+        <div className=' container mx-auto'>
+        <div className=" flex justify-between items-center  mt-9">
 
     <div className="space-y-6">
 
@@ -33,6 +34,7 @@ const Banner = () => {
 
     <img src={banner} alt="" />
 
+</div>
 </div>
     );
 };
