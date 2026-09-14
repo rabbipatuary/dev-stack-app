@@ -4,6 +4,7 @@ import Banner from "./component/Banner"
 import Nav from "./component/Nav"
 import Technologies from "../src/component/technologies/Technologies"
 import type { Itechnologies } from "./types/technologies";
+import Footer from "./component/Footer";
 
 
 const technologiesPromise= async():Promise<Itechnologies[]>=>{
@@ -23,7 +24,9 @@ function App() {
       <Technologies technologiesPromise={technologiesPromise()}></Technologies>
 
       </Suspense>
+       <Footer></Footer>
     </>
+   
   )
 }
 
