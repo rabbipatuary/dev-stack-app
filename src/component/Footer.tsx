@@ -1,9 +1,9 @@
-import footer from '../assets/logo-text.png'
+import logo from '../assets/logo-text.png'
 const Footer = () => {
 
   return (
 
-    <footer className="w-full border-t">
+    <footer className="w-full border-t border-gray-400">
 
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
 
@@ -11,20 +11,15 @@ const Footer = () => {
 
           <div className="flex items-center gap-2">
 
-            <img
-              src= {footer}
-              alt={footer}
-              className="w-8 h-8"
-            />
+            <img src={logo} alt="logo" />
 
-            <h1 className="font-bold text-xl">
-              Dev <span className="text-pink-600">Stack</span>
-            </h1>
+            
 
           </div>
 
           <p className="text-gray-500 text-sm">
-            Curated tools, technologies, and resources for developers building modern software.
+            Curated tools, technologies, and resources for developers building
+modern software.
           </p>
 
           <div className="flex gap-4 text-sm font-medium">
