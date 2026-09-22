@@ -2,7 +2,7 @@
 import banner from '../assets/hero.png'
 const Banner = () => {
     return (
-        <div className=' container mx-auto'>
+       <div className="max-w-7xl mx-auto px-6">
         <div className=" flex justify-between items-center  mt-9">
 
     <div className="space-y-6">
